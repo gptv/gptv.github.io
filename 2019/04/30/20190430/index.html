@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.2.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"suenyu.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="2015年至今，一直在北大附中校内推365；从部署，到一个人使用，到老博雅三五人一起用，到2017年高中部一起用，到2018年推行政后勤全校一起用。至此时，每日的活跃用户已趋稳定。  作为校内日常工作平台，365确实不完美，但在google不再的时代，一个大生态平台，也不可或缺。 2019年4月，新学年的校级结构变革开始，学院定位回归初始；也因此，开始重新构想，如何走出仅作为校内师生内部使用的36">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从O365到Github">
+<meta property="og:url" content="https://suenyu.github.io/2019/04/30/20190430/index.html">
+<meta property="og:site_name" content="無餘說">
+<meta property="og:description" content="2015年至今，一直在北大附中校内推365；从部署，到一个人使用，到老博雅三五人一起用，到2017年高中部一起用，到2018年推行政后勤全校一起用。至此时，每日的活跃用户已趋稳定。  作为校内日常工作平台，365确实不完美，但在google不再的时代，一个大生态平台，也不可或缺。 2019年4月，新学年的校级结构变革开始，学院定位回归初始；也因此，开始重新构想，如何走出仅作为校内师生内部使用的36">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://suenyu.github.io/images/365.png">
+<meta property="og:image" content="https://suenyu.github.io/images/git.png">
+<meta property="article:published_time" content="2019-04-29T16:00:00.000Z">
+<meta property="article:modified_time" content="2019-06-17T03:32:13.000Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="O365">
+<meta property="article:tag" content="github">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://suenyu.github.io/images/365.png">
+
+
+<link rel="canonical" href="https://suenyu.github.io/2019/04/30/20190430/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://suenyu.github.io/2019/04/30/20190430/","path":"2019/04/30/20190430/","title":"从O365到Github"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>从O365到Github | 無餘說</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">無餘說</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#20190503%E6%9B%B4%E6%96%B0%EF%BC%8C%E4%BA%92%E5%8A%A8%E8%AF%84%E8%AE%BA%E5%B7%B2%E5%BC%80%E5%90%AF"><span class="nav-number">1.</span> <span class="nav-text">20190503更新，互动评论已开启</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://suenyu.github.io/2019/04/30/20190430/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="無餘說">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="从O365到Github | 無餘說">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          从O365到Github
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-04-30 00:00:00" itemprop="dateCreated datePublished" datetime="2019-04-30T00:00:00+08:00">2019-04-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2019-06-17 11:32:13" itemprop="dateModified" datetime="2019-06-17T11:32:13+08:00">2019-06-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>2015年至今，一直在北大附中校内推365；从部署，到一个人使用，到老博雅三五人一起用，到2017年高中部一起用，到2018年推行政后勤全校一起用。至此时，每日的活跃用户已趋稳定。</p>
+<p><img src="/images/365.png"></p>
+<p>作为校内日常工作平台，365确实不完美，但在google不再的时代，一个大生态平台，也不可或缺。</p>
+<p>2019年4月，新学年的校级结构变革开始，学院定位回归初始；也因此，开始重新构想，如何走出仅作为校内师生内部使用的365，准确说，如何从校内走出来。</p>
+<span id="more"></span>
+<p>最初考虑回到两年前的gitbook，但Google字体……唉。而且，即便使用VPS或者校内服务器部署gitbook，也还是缺失必要的互动。</p>
+<p>于是，突然想到半年前使用了十几封邮件耗时将近两个月才申到的校级Github。<br><img src="/images/git.png"></p>
+<p>于是，趁考试周，时间相对充裕，新建学院、公民教育、人文项目、荣誉文凭网页，顺便开了这个网页。<br>原本想偷懒直接使用jeklly，发现太单一完全无法拓展，最终还是转到hexo。</p>
+<p>场景上，信息发布，互动评论<del>（尚未开启）</del>是基本，课程或项目，将ISSUES用起来作为互动答疑，将wiki与project用起来作为公开协作，都可深挖。作为社会化学习的基础，现在看来，大致足够了。<br>劣势是学习成本明显高于365，要进入协作层，git是必过的一关，markdown也少不了……但一旦推成，每个学生也就有了自己的一席之地，比在sharepoint做个人主页展示给校内师生看，github才是真实社会情境。</p>
+<p>之前一年，一直经营着学院公号，作宣发也继续可用；但微信的审查已然到了令人发指的程度，继续累积到微信显然不可行；所以，学院各类宣发主要在<a target="_blank" rel="noopener" href="https://pkuschool.github.io/">博雅学院</a>这里展开了。</p>
+<p>一年，可以推多少师生开启自己github之旅，等着看吧：）</p>
+<div class="note success"><h4 id="20190503更新，互动评论已开启"><a href="#20190503更新，互动评论已开启" class="headerlink" title="20190503更新，互动评论已开启"></a>20190503更新，互动评论已开启</h4><p>请直接在任意文章下留言即可，支持匿名，会尽快回复。</p>
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/O365/" rel="tag"># O365</a>
+              <a href="/tags/github/" rel="tag"># github</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2019/05/01/newspace/" rel="next" title="所得">
+                  所得 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
